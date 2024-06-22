@@ -36,7 +36,7 @@ function addUser() {
     allUsers.push(newUser);
     localStorage.setItem("allUsers", JSON.stringify(allUsers));
     setTimeout(function () {
-      window.location.href = "../sign in/signIn.html";
+      window.location.href = "./sign in/signIn.html";
     }, 1500);
   }
 }
