@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="../Css global/normalize.css" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="../Css global/all.min.css" />
+    <!-- bootstrap css library -->
+    <link rel="stylesheet" href="../Css global/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/signIn.css" />
+    <title>signIn</title>
+  </head>
+  <body>
+    <form id="loginForm">
+      <div class="container text-center mx-auto my-5">
+        <div class="group mx-auto w-75 p-5">
+          <h1 class="text-info mb-4">Smart Login System</h1>
+          <input
+            id="loginEmail"
+            type="email"
+            class="form-control mb-4"
+            name="useremail"
+            placeholder="Enter Your Email"
+          />
+          <input
+            id="loginPassword"
+            type="password"
+            class="form-control mb-4"
+            name="userpassword"
+            placeholder="Enter Your Password"
+          />
+
+          <div class="alert alert-danger d-none" id="loginAlert">
+            Incorrect Email Or Password
+          </div>
+          <div class="alert alert-danger d-none" id="loginSuccessAlert">
+            Success You Are Logged In
+          </div>
+
+          <button class="btn btn-outline-info w-100">Sign In</button>
+          <p class="text-white mt-3">
+            Don't have an account?
+            <a class="text-white" href="../sign up/signUp.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script src="../Js global/bootstrap.bundle.min.js"></script>
+    <script src="./js/signIn.js"></script>
+  </body>
+</html>

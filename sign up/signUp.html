@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="../Css global/normalize.css" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="../Css global/all.min.css" />
+    <!-- bootstrap css library -->
+    <link rel="stylesheet" href="../Css global/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <title>signUp</title>
+  </head>
+  <body>
+    <form id="registerForm">
+      <div class="container text-center mx-auto my-5">
+        <div class="group w-75 mx-auto p-5">
+          <h1 class="mb-3">Smart Login System</h1>
+          <input
+            id="signupName"
+            type="text"
+            class="form-control mb-4 my-3"
+            placeholder="Enter Your Name"
+            name="username"
+          />
+          <input
+            id="signupEmail"
+            type="email"
+            class="form-control mb-4 my-3"
+            placeholder="Enter Your Email"
+            name="useremail"
+          />
+          <input
+            id="signupPassword"
+            type="password"
+            class="form-control mb-4 my-3"
+            placeholder="Enter Your Password"
+            name="userpassword"
+          />
+
+          <div class="alert alert-danger d-none" id="nameAlert">
+            At least two characters name
+          </div>
+          <div class="alert alert-danger d-none" id="emailAlert">
+            please enter a valid email
+          </div>
+          <div class="alert alert-danger d-none" id="passwordAlert">
+            At least 8 characters <br />
+            one uppercase at least <br />
+            one special characters at least <br />
+            one number at least
+          </div>
+          <div class="alert alert-danger d-none" id="existAlert">
+            Email is already exist
+          </div>
+          <div class="alert alert-danger d-none" id="successAlert">
+            Success you can login
+          </div>
+
+          <button class="btn btn-outline-info w-100 p-2 my-2">Sign Up</button>
+          <p class="text-white mt-3">
+            You have an account?
+            <a href="../sign in/signIn.html" class="text-white">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script src="../Js global/bootstrap.bundle.min.js"></script>
+    <script src="./js/signUp.js"></script>
+  </body>
+</html>
