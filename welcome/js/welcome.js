@@ -1,13 +1,13 @@
-let welcomeMsg=document.getElementById("welcomeMsg")
+let welcomeMsg = document.getElementById("welcomeMsg");
 
-window.addEventListener("load",function () {
-    displayUserName()
-})
+window.addEventListener("load", function () {
+  displayUserName();
+});
 
 function displayUserName() {
-    if (localStorage.getItem("userName")) {
-        welcomeMsg.innerHTML=`Welcome ${localStorage.getItem("userName")}`
-    } else {
-        welcomeMsg.innerHTML=""
-    }
+  if (localStorage.getItem("userName")) {
+    welcomeMsg.innerHTML = `Welcome ${localStorage.getItem("userName")}`;
+  } else {
+    welcomeMsg.innerHTML = "";
+  }
 }
