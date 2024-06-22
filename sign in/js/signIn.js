@@ -22,15 +22,15 @@ function login() {
     password: loginPassword.value,
   };
 
-    if (isLoginValid(userData) == true) {
-        loginSuccessAlert.classList.replace("d-none", "d-block")
-        loginAlert.classList.replace("d-block", "d-none")
-        setTimeout(function () {
-            window.location.href="../welcome/welcome.html"
-        },1500)
-    } else {
-        loginAlert.classList.replace("d-none", "d-block")
-        loginSuccessAlert.classList.replace("d-block","d-none")
+  if (isLoginValid(userData) == true) {
+    loginSuccessAlert.classList.replace("d-none", "d-block");
+    loginAlert.classList.replace("d-block", "d-none");
+    setTimeout(function () {
+      window.location.href = "../welcome/welcome.html";
+    }, 1500);
+  } else {
+    loginAlert.classList.replace("d-none", "d-block");
+    loginSuccessAlert.classList.replace("d-block", "d-none");
   }
 }
 
@@ -40,8 +40,8 @@ function isLoginValid(userData) {
       allUsers[i].email.toLowerCase() == userData.email.toLowerCase() &&
       allUsers[i].password.toLowerCase() == userData.password.toLowerCase()
     ) {
-        localStorage.setItem("userName",allUsers[i].name)
-        return true 
+      localStorage.setItem("userName", allUsers[i].name);
+      return true;
     }
   }
 }
